@@ -1,0 +1,298 @@
+.caveat {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+main {
+    top: 10px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/動物イラスト.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ribbon {
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 50px;
+    /*フォントサイズ*/
+    background: khaki;
+    /*背景色*/
+    color: #FFF;
+    /*文字色*/
+    box-sizing: border-box;
+    margin-top: 10px;
+    font-family: caveat;
+}
+
+.ribbon h1 {
+    margin: 0;
+    padding: 0 30px;
+    border-top: dashed 1px #FFF;
+    /*上の破線*/
+    border-bottom: dashed 1px #FFF;
+    /*下の破線*/
+    line-height: 46px;
+}
+
+.ribbon:before,
+.ribbon:after {
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 0px;
+    z-index: 1;
+}
+
+.ribbon:before {
+    /*左端の山形*/
+    top: 0;
+    left: 0;
+    border-width: 30px 0px 30px 15px;
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+}
+
+.ribbon:after {
+    /*右端の山形*/
+    top: 0;
+    right: 0;
+    border-width: 30px 15px 30px 0px;
+    border-color: transparent #fff transparent transparent;
+    border-style: solid;
+}
+
+.mainbox {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.box01 .box-title {
+    /*セロテープ風*/
+    background-color: rgba(255, 255, 255, .1);
+    /* テープ背景色と透過*/
+    border-left: 2px dotted rgba(0, 0, 0, .1);
+    /* テープのギザギザ左*/
+    border-right: 2px dotted rgba(0, 0, 0, .1);
+    /* テープのギザギザ右*/
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /*テープ影*/
+    transform: rotate(-2deg);
+    /*テープの傾き*/
+    font-size: 1em;
+    /*タイトル文字の大きさ*/
+    color: #666;
+    /*タイトル文字色 */
+    padding: 10px 20px;
+    /*タイトルの余白*/
+    line-height: 1;
+    /*タイトルの行の高さ*/
+    position: absolute;
+    /*配置(ここを動かす)*/
+    top: -15px;
+    /*上から（-10px）移動*/
+}
+
+.box01 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box01-left {
+    width: 20%;
+    /* ボックス背景色 */
+    background-color: #E6ECF2;
+    margin: 2em 2em;
+    /* ボックス内側余白 */
+    padding: 2.5em 2em 2em;
+    /* 配置(ここを基準に) */
+    position: relative;
+    border: 2px solid #4c9ac0;
+}
+
+.box01-right {
+    width: 20%;
+    /* ボックス背景色 */
+    background-color: #E6ECF2;
+    /* ボックスの余白 */
+    margin: 2em 2em;
+    /* ボックス内側余白 */
+    padding: 2.5em 2em 2em;
+    /* 配置(ここを基準に) */
+    position: relative;
+}
+
+.box02 .box-title {
+    /*セロテープ風*/
+    background-color: rgba(255, 255, 255, .1);
+    /* テープ背景色と透過*/
+    border-left: 2px dotted rgba(0, 0, 0, .1);
+    /* テープのギザギザ左*/
+    border-right: 2px dotted rgba(0, 0, 0, .1);
+    /* テープのギザギザ右*/
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /*テープ影*/
+    transform: rotate(-2deg);
+    /*テープの傾き*/
+    font-size: 1em;
+    /*タイトル文字の大きさ*/
+    color: #666;
+    /*タイトル文字色 */
+    padding: 10px 20px;
+    /*タイトルの余白*/
+    line-height: 1;
+    /*タイトルの行の高さ*/
+    position: absolute;
+    /*配置(ここを動かす)*/
+    top: -15px;
+    /*上から（-10px）移動*/
+}
+
+.box02 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box02-left {
+    width: 20%;
+    /* ボックス背景色 */
+    background-color: #E6ECF2;
+    margin: 2em 2em;
+    /* ボックス内側余白 */
+    padding: 2.5em 2em 2em;
+    /* 配置(ここを基準に) */
+    position: relative;
+}
+
+.box02-right {
+    width: 20%;
+    /* ボックス背景色 */
+    background-color: #E6ECF2;
+    /* ボックスの余白 */
+    margin: 2em 2em;
+    /* ボックス内側余白 */
+    padding: 2.5em 2em 2em;
+    /* 配置(ここを基準に) */
+    position: relative;
+}
+
+.box03 .box-title {
+    /*セロテープ風*/
+    background-color: rgba(255, 255, 255, .1);
+    /* テープ背景色と透過*/
+    border-left: 2px dotted rgba(0, 0, 0, .1);
+    /* テープのギザギザ左*/
+    border-right: 2px dotted rgba(0, 0, 0, .1);
+    /* テープのギザギザ右*/
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /*テープ影*/
+    transform: rotate(-2deg);
+    /*テープの傾き*/
+    font-size: 1em;
+    /*タイトル文字の大きさ*/
+    color: #666;
+    /*タイトル文字色 */
+    padding: 10px 20px;
+    /*タイトルの余白*/
+    line-height: 1;
+    /*タイトルの行の高さ*/
+    position: absolute;
+    /*配置(ここを動かす)*/
+    top: -15px;
+    /*上から（-10px）移動*/
+}
+
+.box03 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box03-left {
+    width: 20%;
+    /* ボックス背景色 */
+    background-color: #E6ECF2;
+    margin: 2em 2em;
+    /* ボックス内側余白 */
+    padding: 2.5em 2em 2em;
+    /* 配置(ここを基準に) */
+    position: relative;
+}
+
+.box03-right {
+    width: 20%;
+    /* ボックス背景色 */
+    background-color: #E6ECF2;
+    /* ボックスの余白 */
+    margin: 2em 2em;
+    /* ボックス内側余白 */
+    padding: 2.5em 2em 2em;
+    /* 配置(ここを基準に) */
+    position: relative;
+}
+
+.box04 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box04 .box-title {
+    /*セロテープ風*/
+    background-color: rgba(255, 255, 255, .1);
+    /* テープ背景色と透過*/
+    border-left: 2px dotted rgba(0, 0, 0, .1);
+    /* テープのギザギザ左*/
+    border-right: 2px dotted rgba(0, 0, 0, .1);
+    /* テープのギザギザ右*/
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /*テープ影*/
+    transform: rotate(-2deg);
+    /*テープの傾き*/
+    font-size: 1em;
+    /*タイトル文字の大きさ*/
+    color: #666;
+    /*タイトル文字色 */
+    padding: 10px 20px;
+    /*タイトルの余白*/
+    line-height: 1;
+    /*タイトルの行の高さ*/
+    position: absolute;
+    /*配置(ここを動かす)*/
+    top: -15px;
+    /*上から（-10px）移動*/
+}
+
+.box04-left {
+    width: 20%;
+    /* ボックス背景色 */
+    background-color: #E6ECF2;
+    margin: 2em 2em;
+    /* ボックス内側余白 */
+    padding: 2.5em 2em 2em;
+    /* 配置(ここを基準に) */
+    position: relative;
+}
+
+.box04-right {
+    width: 20%;
+    /* ボックス背景色 */
+    background-color: #E6ECF2;
+    /* ボックスの余白 */
+    margin: 2em 2em;
+    /* ボックス内側余白 */
+    padding: 2.5em 2em 2em;
+    /* 配置(ここを基準に) */
+    position: relative;
+}
