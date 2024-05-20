@@ -408,3 +408,23 @@ input[type=checkbox]:checked+.checkbox01::after {
     box-shadow: 0px 0px 0px 10px #CBFFD3;
     border: dashed 2px white;
 }
+
+
+.score-wrap {
+    margin-top: 10px;
+    text-align: center;
+    color: #696969;
+
+    .score {
+        font-size: 80px;
+        font-weight: bold;
+    }
+
+    .ja {
+        font-size: 34px;
+    }
+
+    .full {
+        font-size: 24px;
+    }
+}

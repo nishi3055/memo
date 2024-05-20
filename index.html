@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <main>
         <div class="ribbon">
             <h1 id="title"><span>Weekly SCHEDULE</span></h1>
@@ -115,14 +116,30 @@
                     </div>
                     <div class="box04-right">
                         <div class="box-title">WEEK POINT</div>
-                        <h3>ルリボシカミキリ</h3>
-                        <p>幅：100%<br>高さ：80px</p>
+                        <div class="finish">
+                            <div class="score-wrap">
+                                <span class="score">0</span>
+                                <span class="ja">P</span>
+                                <span class="full">／135P</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    
+<script>
+    //チェックボックスを取得する
+        const el = document.getElementsByClassName("checkbox");
+    //チェック済みのチェックボックスの数を返す
+        const getCheckedCount = () => {
+            let count = 0;
+            for (let i = 0; i < el.length; i++) {
+            if (el[i].checked) {
+            count++;}
+            }
+        };
+</script>
     
 </body>
 </html>
