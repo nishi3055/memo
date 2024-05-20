@@ -100,8 +100,6 @@ main {
     /*タイトルの余白*/
     line-height: 1;
     /*タイトルの行の高さ*/
-    position: absolute;
-    /*配置(ここを動かす)*/
     top: -15px;
     /*上から（-10px）移動*/
 }
@@ -112,27 +110,133 @@ main {
 }
 
 .box01-left {
-    width: 20%;
+    width: 30%;
     /* ボックス背景色 */
-    background-color: #E6ECF2;
-    margin: 2em 2em;
+    background-color: white;
     /* ボックス内側余白 */
-    padding: 2.5em 2em 2em;
+    margin: 2em 2em;
     /* 配置(ここを基準に) */
+    padding: 2.5em 2em 2em;
     position: relative;
-    border: 2px solid #4c9ac0;
+    padding: 0.2em 0.5em;
+    background: #d6ebff;
+    box-shadow: 0px 0px 0px 10px #d6ebff;
+    border: dashed 2px white;
 }
 
+/* チェックボックス01 */
+input[type=checkbox] {
+    display: none;
+}
+
+.checkbox-Mon>label {
+    /*チェックボックス縦並び*/
+    margin-top: 20px;
+    display: block;
+    cursor: pointer;
+}
+.checkbox-Tue>label {
+    /*チェックボックス縦並び*/
+    margin-top: 20px;
+    display: block;
+    cursor: pointer;
+}
+.checkbox-Wed>label {
+    /*チェックボックス縦並び*/
+    margin-top: 20px;
+    display: block;
+    cursor: pointer;
+}
+.checkbox-Thu>label {
+    /*チェックボックス縦並び*/
+    margin-top: 20px;
+    display: block;
+    cursor: pointer;
+}
+.checkbox-Fri>label {
+    /*チェックボックス縦並び*/
+    margin-top: 20px;
+    display: block;
+    cursor: pointer;
+}
+.checkbox-Sat>label {
+    /*チェックボックス縦並び*/
+    margin-top: 20px;
+    display: block;
+    cursor: pointer;
+}
+.checkbox-Sun>label {
+    /*チェックボックス縦並び*/
+    margin-top: 20px;
+    display: block;
+    cursor: pointer;
+}
+
+.checkbox01 {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 30px;
+    position: relative;
+    width: auto;
+}
+
+.checkbox01::before {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 16px;
+    left: 5px;
+    margin-top: -8px;
+    position: absolute;
+    top: 50%;
+    width: 16px;
+}
+
+.checkbox01::after {
+    border-right: 6px solid #fedd1e;
+    border-bottom: 3px solid #fedd1e;
+    content: '';
+    display: block;
+    height: 20px;
+    left: 7px;
+    margin-top: -16px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: rotate(45deg) translate3d(0, 2px, 0) scale3d(.7, .7, 1);
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+    width: 9px;
+}
+
+input[type=checkbox]:checked+.checkbox01::before {
+    border-color: #666;
+}
+
+input[type=checkbox]:checked+.checkbox01::after {
+    opacity: 1;
+    transform: rotate(45deg) scale3d(1, 1, 1);
+}
+
+
 .box01-right {
-    width: 20%;
+    width: 30%;
     /* ボックス背景色 */
     background-color: #E6ECF2;
     /* ボックスの余白 */
     margin: 2em 2em;
     /* ボックス内側余白 */
-    padding: 2.5em 2em 2em;
-    /* 配置(ここを基準に) */
     position: relative;
+    padding: 0.2em 0.5em;
+    background: #FFE4E1;
+    box-shadow: 0px 0px 0px 10px #FFE4E1;
+    border: dashed 2px white;
+}
+.tomorrow {
+    margin: 20px;
+    padding: 8px;
 }
 
 .box02 .box-title {
@@ -155,8 +259,6 @@ main {
     /*タイトルの余白*/
     line-height: 1;
     /*タイトルの行の高さ*/
-    position: absolute;
-    /*配置(ここを動かす)*/
     top: -15px;
     /*上から（-10px）移動*/
 }
@@ -167,26 +269,30 @@ main {
 }
 
 .box02-left {
-    width: 20%;
+    width: 30%;
     /* ボックス背景色 */
     background-color: #E6ECF2;
     margin: 2em 2em;
     /* ボックス内側余白 */
-    padding: 2.5em 2em 2em;
-    /* 配置(ここを基準に) */
     position: relative;
+    padding: 0.2em 0.5em;
+    background: #FFE4E1;
+    box-shadow: 0px 0px 0px 10px #FFE4E1;
+    border: dashed 2px white;
 }
 
 .box02-right {
-    width: 20%;
+    width: 30%;
     /* ボックス背景色 */
     background-color: #E6ECF2;
     /* ボックスの余白 */
     margin: 2em 2em;
     /* ボックス内側余白 */
-    padding: 2.5em 2em 2em;
-    /* 配置(ここを基準に) */
     position: relative;
+    padding: 0.2em 0.5em;
+    background: #d6ebff;
+    box-shadow: 0px 0px 0px 10px #d6ebff;
+    border: dashed 2px white;
 }
 
 .box03 .box-title {
@@ -209,8 +315,6 @@ main {
     /*タイトルの余白*/
     line-height: 1;
     /*タイトルの行の高さ*/
-    position: absolute;
-    /*配置(ここを動かす)*/
     top: -15px;
     /*上から（-10px）移動*/
 }
@@ -221,7 +325,7 @@ main {
 }
 
 .box03-left {
-    width: 20%;
+    width: 30%;
     /* ボックス背景色 */
     background-color: #E6ECF2;
     margin: 2em 2em;
@@ -229,18 +333,24 @@ main {
     padding: 2.5em 2em 2em;
     /* 配置(ここを基準に) */
     position: relative;
+    padding: 0.2em 0.5em;
+    background: #d6ebff;
+    box-shadow: 0px 0px 0px 10px #d6ebff;
+    border: dashed 2px white;
 }
 
 .box03-right {
-    width: 20%;
+    width: 30%;
     /* ボックス背景色 */
     background-color: #E6ECF2;
     /* ボックスの余白 */
     margin: 2em 2em;
     /* ボックス内側余白 */
-    padding: 2.5em 2em 2em;
-    /* 配置(ここを基準に) */
     position: relative;
+    padding: 0.2em 0.5em;
+    background: #FFE4E1;
+    box-shadow: 0px 0px 0px 10px #FFE4E1;
+    border: dashed 2px white;
 }
 
 .box04 {
@@ -268,31 +378,33 @@ main {
     /*タイトルの余白*/
     line-height: 1;
     /*タイトルの行の高さ*/
-    position: absolute;
-    /*配置(ここを動かす)*/
     top: -15px;
     /*上から（-10px）移動*/
 }
 
 .box04-left {
-    width: 20%;
+    width: 30%;
     /* ボックス背景色 */
     background-color: #E6ECF2;
     margin: 2em 2em;
     /* ボックス内側余白 */
-    padding: 2.5em 2em 2em;
-    /* 配置(ここを基準に) */
     position: relative;
+    padding: 0.2em 0.5em;
+    background: #FFE4E1;
+    box-shadow: 0px 0px 0px 10px #FFE4E1;
+    border: dashed 2px white;
 }
 
 .box04-right {
-    width: 20%;
+    width: 30%;
     /* ボックス背景色 */
     background-color: #E6ECF2;
     /* ボックスの余白 */
     margin: 2em 2em;
     /* ボックス内側余白 */
-    padding: 2.5em 2em 2em;
-    /* 配置(ここを基準に) */
     position: relative;
+    padding: 0.2em 0.5em;
+    background: #CBFFD3;
+    box-shadow: 0px 0px 0px 10px #CBFFD3;
+    border: dashed 2px white;
 }
