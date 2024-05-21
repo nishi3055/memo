@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -121,6 +121,7 @@
                                 <span class="score">0</span>
                                 <span class="ja">P</span>
                                 <span class="full">／135P</span>
+                                <button id="select">獲得POINT</button>
                             </div>
                         </div>
                     </div>
@@ -129,16 +130,14 @@
         </div>
     </main>
 <script>
-    //チェックボックスを取得する
-        const el = document.getElementsByClassName("checkbox");
-    //チェック済みのチェックボックスの数を返す
-        const getCheckedCount = () => {
-            let count = 0;
-            for (let i = 0; i < el.length; i++) {
-            if (el[i].checked) {
-            count++;}
-            }
-        };
+    
+    $(document).ready(function () {
+        $('#select').click(function () {
+            var checkboxes = $('input:checkbox:checked').length;
+            $('.score').text(checkboxes);
+        })
+    });
+    
 </script>
     
 </body>
