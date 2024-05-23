@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <main>
         <div class="ribbon">
             <h1 id="title"><span>Weekly SCHEDULE</span></h1>
@@ -20,68 +21,164 @@
                 <div class="box01">
                     <div class="box01-left">
                         <div class="box-title">MONDAY</div>
-                        <p>あしたのもちものじゅんび</p>
-                        <p>しゅくだい</p>
-                        <p>はみがき</p>
+                        <div class="checkbox-Mon">
+                            <input type="checkbox" name="checkbox01" id="01l-A" checked="checked" onclick="fav();" class="checkbox_check">
+                            <label for="01l-A" class="checkbox01">あしたのじゅんび</label>
+                            <input type="checkbox" id="01l-B" name="checkbox01" onclick="fav();" class="checkbox_check">
+                            <label for="01l-B" class="checkbox01">しゅくだい</label>
+                            <input type="checkbox" id="01l-C" name="checkbox01" onclick="fav();" class="checkbox_check">
+                            <label for="01l-C" class="checkbox01">はみがき</label>
+                        </div>
                     </div>
                     <div class="box01-right">
                         <div class="box-title">TUESDAY</div>
-                        <p>あしたのもちものじゅんび</p>
-                        <p>しゅくだい</p>
-                        <p>さんすうドリル</p>
-                        <p>はみがき</p>
+                        <div class="checkbox-Tue">
+                            <input type="checkbox" name="checkbox01" id="01r-A" checked="checked" onclick="fav();" class="checkbox_check">
+                            <label for="01r-A" class="checkbox01">あしたのじゅんび</label>
+                            <input type="checkbox" id="01r-B" name="checkbox01" onclick="fav();" class="checkbox_check">
+                            <label for="01r-B" class="checkbox01">しゅくだい</label>
+                            <input type="checkbox" id="01r-C" name="checkbox01" onclick="fav();" class="checkbox_check">
+                            <label for="01r-C" class="checkbox01">さんすうドリル</label>
+                            <input type="checkbox" id="01r-D" name="checkbox01" onclick="fav();" class="checkbox_check">
+                            <label for="01r-D" class="checkbox01">はみがき</label>
+                        </div>
                     </div>
                 </div>
                 <div class="box02">
                     <div class="box02-left">
                         <div class="box-title">WEDNESDAY</div>
-                        <p>あしたのもちものじゅんび</p>
-                        <p>しゅくだい</p>
-                        <p>こくごドリル</p>
-                        <p>はみがき</p>
+                        <div class="checkbox-Wed">
+                            <input type="checkbox" name="checkbox01" id="02l-A" checked="checked" onclick="fav();" class="checkbox_check">
+                            <label for="02l-A" class="checkbox01">あしたのじゅんび</label>
+                            <input type="checkbox" id="02l-B" name="checkbox01" onclick="fav();" class="checkbox_check">
+                            <label for="02l-B" class="checkbox01">しゅくだい</label>
+                            <input type="checkbox" id="02l-C" name="checkbox01" onclick="fav();" class="checkbox_check">
+                            <label for="02l-C" class="checkbox01">こくごドリル</label>
+                            <input type="checkbox" id="02l-D" name="checkbox01" onclick="fav();" class="checkbox_check">
+                            <label for="02l-D" class="checkbox01">はみがき</label>
+                        </div>
                     </div>
                     <div class="box02-right">
                         <div class="box-title">THURSDAY</div>
-                        <p>あしたのもちものじゅんび</p>
-                        <p>しゅくだい</p>
-                        <p>おんどく</p>
-                        <p>はみがき</p>
+                        <div class="checkbox-Thu">
+                            <input type="checkbox" name="checkbox01" id="02r-A" checked="checked" onclick="fav();" class="checkbox_check">
+                            <label for="02r-A" class="checkbox01">あしたのじゅんび</label>
+                            <input type="checkbox" id="02r-B" name="checkbox01" onclick="fav();" class="checkbox_check">
+                            <label for="02r-B" class="checkbox01">しゅくだい</label>
+                            <input type="checkbox" id="02r-C" name="checkbox01" onclick="fav();" class="checkbox_check">
+                            <label for="02r-C" class="checkbox01">おんどく</label>
+                            <input type="checkbox" id="02r-D" name="checkbox01" onclick="fav();" class="checkbox_check">
+                            <label for="02r-D" class="checkbox01">はみがき</label>
+                        </div>
                     </div>
                 </div>
                 <div class="box03">
                     <div class="box03-left">
                         <div class="box-title">FRIDAY</div>
-                        <p>あしたのもちものじゅんび</p>
-                        <p>しゅくだい</p>
-                        <p>せんたくものをしまう</p>
-                        <p>はみがき</p>
+                        <div class="checkbox-Fri">
+                            <input type="checkbox" name="checkbox01" id="03l-A" checked="checked" onclick="fav();" class="checkbox_check">
+                            <label for="03l-A" class="checkbox01">あしたのじゅんび</label>
+                            <input type="checkbox" id="03l-B" name="checkbox01" onclick="fav();" class="checkbox_check">
+                            <label for="03l-B" class="checkbox01">しゅくだい</label>
+                            <input type="checkbox" id="03l-C" name="checkbox01" onclick="fav();" class="checkbox_check">
+                            <label for="03l-C" class="checkbox01">せんたくものをしまう</label>
+                            <input type="checkbox" id="03l-D" name="checkbox01" onclick="fav();" class="checkbox_check">
+                            <label for="03l-D" class="checkbox01">はみがき</label>
+                        </div>
                     </div>
                     <div class="box03-right">
                         <div class="box-title">SATURDAY</div>
-                        <p>ドリル</p>
-                        <p>うえきばちにみずをあげる</p>
-                        <p>うわばきをあらう</p>
-                        <p>はみがき</p>
+                        <div class="checkbox-Sat">
+                            <input type="checkbox" name="checkbox01" id="03r-A" checked="checked" onclick="fav();" class="checkbox_check">
+                            <label for="03r-A" class="checkbox01">ドリル</label>
+                            <input type="checkbox" id="03r-B" name="checkbox01" onclick="fav();" class="checkbox_check">
+                            <label for="03r-B" class="checkbox01">うえきばちにみずをあげる</label>
+                            <input type="checkbox" id="03r-C" name="checkbox01" onclick="fav();" class="checkbox_check">
+                            <label for="03r-C" class="checkbox01">うわばきをあらう</label>
+                            <input type="checkbox" id="03r-D" name="checkbox01" onclick="fav();" class="checkbox_check">
+                            <label for="03r-D" class="checkbox01">はみがき</label>
+                        </div>
                     </div>
                 </div>
                 <div class="box04">
                     <div class="box04-left">
                         <div class="box-title">SUNDAY</div>
-                        <p>あしたのもちものじゅんび</p>
-                        <p>ドリル</p>
-                        <p>うえきばちにみずをあげる</p>
-                        <p>はみがき</p>
+                        <div class="checkbox-Sun">
+                            <input type="checkbox" name="checkbox01" id="04l-A" checked="checked" onclick="fav();" class="checkbox_check">
+                            <label for="04l-A" class="checkbox01">ドリル</label>
+                            <input type="checkbox" id="04l-B" name="checkbox01" onclick="fav();" class="checkbox_check">
+                            <label for="04l-B" class="checkbox01">うえきばちにみずをあげる</label>
+                            <input type="checkbox" id="04l-C" name="checkbox01" onclick="fav();" class="checkbox_check">
+                            <label for="04l-C" class="checkbox01">うわばきをあらう</label>
+                            <input type="checkbox" id="04l-D" name="checkbox01" onclick="fav();" class="checkbox_check">
+                            <label for="04l-D" class="checkbox01">はみがき</label>
+                        </div>
                     </div>
                     <div class="box04-right">
                         <div class="box-title">WEEK POINT</div>
-                        <h3>ルリボシカミキリ</h3>
-                        <p>幅：100%<br>高さ：80px</p>
+                        <div class="finish">
+                            <div class="score-wrap">
+                                <span class="score">0</span>
+                                <span class="ja">P</span>
+                                <span class="full">／27P</span>
+                            </div>
+                            <button class="save">SAVE</button>
+                            <input type="button" class="clear" value="Clear" onclick="allcheck(false);" />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    
+<script>
+    $('input[type=checkbox]').change(function () {
+        var checkboxes = $('input:checkbox:checked').length;
+        $('.score').text(checkboxes);
+    });
+
+    var CheckboxElements = document.getElementsByClassName("checkbox_check");
+        var CECounts = CheckboxElements.length;
+        var FavElements;
+        var FavLoad;
+
+        window.onload = function () {
+
+            //チェックボックス読み込み
+            for (var i = 0; i < CECounts; i++) {
+            FavElements = CheckboxElements[i];
+            FavLoad = JSON.parse(localStorage.getItem("checkbox_checked" + i));
+            if (FavLoad == true) {
+            FavElements = CheckboxElements[i];
+            FavElements.checked = true;
+                }
+                }
+                };
+
+            //チェックボックス保存
+            function fav() {
+                for (var i = 0; i < CECounts; i++) {
+                    FavElements = CheckboxElements[i];
+                    //※コンソールを開いてこの文字列を確認
+                    console.log("checkbox_checked" + FavElements);
+                    if (FavElements.checked == true) {
+                    localStorage.setItem("checkbox_checked" + i, JSON.stringify(true));
+                    } else {
+                    localStorage.setItem("checkbox_checked" + FavElements, JSON.stringify("false"));
+                    localStorage.setItem("checkbox_checked" + i, JSON.stringify(false));
+                    }
+                }
+                }
+            
+
+    function allcheck(_bool) {
+        //まずは、ページ上に存在する全てのチェックボックスを取得します。
+            var checkboxes = document.querySelectorAll('input[type=checkbox]');
+            //チェックボックスの数だけ繰り返し処理させます
+            for (i = 0; i < checkboxes.length; i++) {
+                checkboxes[i].checked = _bool;
+            }
+        }
+</script>
     
 </body>
 </html>
